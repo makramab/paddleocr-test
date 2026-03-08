@@ -115,6 +115,9 @@ async def main() -> None:
     config = BACKENDS[backend]()
     result = await extract_file(INVOICE_PATH, config=config)
     text = result.content
+
+    t_ocr = time.monotonic() - t_start
+
     print(f"  Extracted {len(text)} characters of text")
 
     # Save raw extracted text for debugging
@@ -125,6 +128,7 @@ async def main() -> None:
 
     # Step 2: Send to OpenAI for structured extraction
     print("Step 2: Sending text to OpenAI for structured extraction...")
+    t_api_start = time.monotonic()
     client = OpenAI()
     completion = client.beta.chat.completions.parse(
         model="gpt-5.1-2025-11-13",
@@ -137,7 +141,8 @@ async def main() -> None:
     )
     extraction = completion.choices[0].message.parsed
 
-    elapsed = time.monotonic() - t_start
+    t_api = time.monotonic() - t_api_start
+    t_total = time.monotonic() - t_start
 
     usage = completion.usage
     prompt_tokens = usage.prompt_tokens
@@ -151,7 +156,9 @@ async def main() -> None:
     output_data = extraction.model_dump()
     output_data["_meta"] = {
         "backend": backend,
-        "elapsed_seconds": round(elapsed, 2),
+        "ocr_seconds": round(t_ocr, 2),
+        "api_seconds": round(t_api, 2),
+        "total_seconds": round(t_total, 2),
         "prompt_tokens": prompt_tokens,
         "completion_tokens": completion_tokens,
         "total_tokens": total_tokens,
@@ -174,7 +181,9 @@ async def main() -> None:
     print(f"  Invoice total: ${summary.invoice_total:.2f}")
     print(f"  Tax: ${summary.tax_amount:.2f}")
     print(f"\nBenchmark:")
-    print(f"  Elapsed: {elapsed:.2f}s")
+    print(f"  OCR extraction: {t_ocr:.2f}s")
+    print(f"  API call:       {t_api:.2f}s")
+    print(f"  Total:          {t_total:.2f}s")
     print(f"  Tokens: {prompt_tokens} in / {completion_tokens} out / {total_tokens} total")
 
 
