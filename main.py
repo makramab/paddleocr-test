@@ -5,7 +5,7 @@ import time
 from pathlib import Path
 
 from kreuzberg import ExtractionConfig, OcrConfig, extract_file
-from openai import OpenAI
+from openai import AsyncOpenAI, OpenAI
 
 from models import InvoiceExtractionResult
 
@@ -94,43 +94,38 @@ BACKENDS = {
 }
 
 
-async def main() -> None:
-    parser = argparse.ArgumentParser(description="OCR-based invoice extraction pipeline")
-    parser.add_argument(
-        "--backend",
-        choices=list(BACKENDS.keys()),
-        default="default",
-        help="OCR backend to use (default: PDF text extraction without OCR)",
-    )
-    args = parser.parse_args()
-    backend = args.backend
+async def run_single(backend: str, run_id: int | None = None, client: AsyncOpenAI | None = None) -> dict:
+    """Run a single extraction pipeline. Returns timing/token metadata."""
+    label = f"[run {run_id}] " if run_id is not None else ""
+    suffix = f"_run{run_id}" if run_id is not None else ""
 
-    output_json = f"./outputs/extraction_result_{backend}.json"
-    output_raw = f"./outputs/raw_text_{backend}.txt"
+    output_json = f"./outputs/extraction_result_{backend}{suffix}.json"
+    output_raw = f"./outputs/raw_text_{backend}{suffix}.txt"
 
     t_start = time.monotonic()
 
     # Step 1: Extract text from PDF with Kreuzberg
-    print(f"Step 1: Extracting text from PDF with Kreuzberg (backend={backend})...")
+    print(f"{label}Step 1: Extracting text from PDF with Kreuzberg (backend={backend})...")
     config = BACKENDS[backend]()
     result = await extract_file(INVOICE_PATH, config=config)
     text = result.content
 
     t_ocr = time.monotonic() - t_start
 
-    print(f"  Extracted {len(text)} characters of text")
+    print(f"{label}  Extracted {len(text)} characters of text")
 
     # Save raw extracted text for debugging
     raw_path = Path(output_raw)
     raw_path.parent.mkdir(parents=True, exist_ok=True)
     raw_path.write_text(text)
-    print(f"  Raw text saved to {output_raw}")
+    print(f"{label}  Raw text saved to {output_raw}")
 
     # Step 2: Send to OpenAI for structured extraction
-    print("Step 2: Sending text to OpenAI for structured extraction...")
+    print(f"{label}Step 2: Sending text to OpenAI for structured extraction...")
     t_api_start = time.monotonic()
-    client = OpenAI()
-    completion = client.beta.chat.completions.parse(
+    if client is None:
+        client = AsyncOpenAI()
+    completion = await client.beta.chat.completions.parse(
         model="gpt-5.1-2025-11-13",
         reasoning_effort="none",
         messages=[
@@ -149,13 +144,14 @@ async def main() -> None:
     completion_tokens = usage.completion_tokens
     total_tokens = usage.total_tokens
 
-    print(f"  Extracted {len(extraction.table_data.line_items)} line items")
+    print(f"{label}  Extracted {len(extraction.table_data.line_items)} line items")
 
     # Step 3: Save result to JSON
-    print("Step 3: Saving result...")
+    print(f"{label}Step 3: Saving result...")
     output_data = extraction.model_dump()
-    output_data["_meta"] = {
+    meta = {
         "backend": backend,
+        "run_id": run_id,
         "ocr_seconds": round(t_ocr, 2),
         "api_seconds": round(t_api, 2),
         "total_seconds": round(t_total, 2),
@@ -163,28 +159,85 @@ async def main() -> None:
         "completion_tokens": completion_tokens,
         "total_tokens": total_tokens,
     }
+    output_data["_meta"] = meta
     json_path = Path(output_json)
     json_path.parent.mkdir(parents=True, exist_ok=True)
     json_path.write_text(
         json.dumps(output_data, indent=2, ensure_ascii=False) + "\n"
     )
-    print(f"  Saved to {output_json}")
+    print(f"{label}  Saved to {output_json}")
 
     # Quick summary
     summary = extraction.table_data.summary
-    print(f"\nSummary:")
-    print(f"  Backend: {backend}")
-    print(f"  Document type: {extraction.document_type}")
-    print(f"  Vendor: {extraction.vendor_info.vendor_name}")
-    print(f"  Line items: {summary.total_line_items}")
-    print(f"  Line items total: ${summary.line_items_total:.2f}")
-    print(f"  Invoice total: ${summary.invoice_total:.2f}")
-    print(f"  Tax: ${summary.tax_amount:.2f}")
-    print(f"\nBenchmark:")
-    print(f"  OCR extraction: {t_ocr:.2f}s")
-    print(f"  API call:       {t_api:.2f}s")
-    print(f"  Total:          {t_total:.2f}s")
-    print(f"  Tokens: {prompt_tokens} in / {completion_tokens} out / {total_tokens} total")
+    print(f"\n{label}Summary:")
+    print(f"{label}  Backend: {backend}")
+    print(f"{label}  Document type: {extraction.document_type}")
+    print(f"{label}  Vendor: {extraction.vendor_info.vendor_name}")
+    print(f"{label}  Line items: {summary.total_line_items}")
+    print(f"{label}  Line items total: ${summary.line_items_total:.2f}")
+    print(f"{label}  Invoice total: ${summary.invoice_total:.2f}")
+    print(f"{label}  Tax: ${summary.tax_amount:.2f}")
+    print(f"\n{label}Benchmark:")
+    print(f"{label}  OCR extraction: {t_ocr:.2f}s")
+    print(f"{label}  API call:       {t_api:.2f}s")
+    print(f"{label}  Total:          {t_total:.2f}s")
+    print(f"{label}  Tokens: {prompt_tokens} in / {completion_tokens} out / {total_tokens} total")
+
+    return meta
+
+
+async def main() -> None:
+    parser = argparse.ArgumentParser(description="OCR-based invoice extraction pipeline")
+    parser.add_argument(
+        "--backend",
+        choices=list(BACKENDS.keys()),
+        default="default",
+        help="OCR backend to use (default: PDF text extraction without OCR)",
+    )
+    parser.add_argument(
+        "--parallel",
+        type=int,
+        default=1,
+        metavar="N",
+        help="Run N extractions in parallel for stress testing (default: 1)",
+    )
+    args = parser.parse_args()
+    backend = args.backend
+    parallel = args.parallel
+
+    if parallel <= 1:
+        await run_single(backend)
+        return
+
+    # Stress test mode
+    print(f"Stress test: launching {parallel} parallel runs with backend={backend}\n")
+    t_wall_start = time.monotonic()
+    client = AsyncOpenAI()
+    tasks = [run_single(backend, run_id=i, client=client) for i in range(1, parallel + 1)]
+    results = await asyncio.gather(*tasks)
+    t_wall = time.monotonic() - t_wall_start
+
+    # Print stress test summary
+    print("\n" + "=" * 70)
+    print(f"STRESS TEST SUMMARY ({parallel} parallel runs, backend={backend})")
+    print("=" * 70)
+    print(f"{'Run':<6} {'OCR':>8} {'API':>8} {'Total':>8} {'Tokens':>8}")
+    print("-" * 42)
+    for r in results:
+        print(f"  {r['run_id']:<4} {r['ocr_seconds']:>7.2f}s {r['api_seconds']:>7.2f}s "
+              f"{r['total_seconds']:>7.2f}s {r['total_tokens']:>7}")
+
+    ocr_times = [r["ocr_seconds"] for r in results]
+    api_times = [r["api_seconds"] for r in results]
+    total_times = [r["total_seconds"] for r in results]
+    total_tokens = sum(r["total_tokens"] for r in results)
+
+    print("-" * 42)
+    print(f"  {'Avg':<4} {sum(ocr_times)/len(ocr_times):>7.2f}s {sum(api_times)/len(api_times):>7.2f}s "
+          f"{sum(total_times)/len(total_times):>7.2f}s {total_tokens//parallel:>7}")
+    print(f"\n  Wall clock:    {t_wall:.2f}s")
+    print(f"  Total tokens:  {total_tokens}")
+    print(f"  Throughput:    {parallel / t_wall:.2f} invoices/sec")
 
 
 asyncio.run(main())
