@@ -1,0 +1,78 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "LION HVAC SUPPLIES INC.",
+    "vendor_address": "835 SHEPHERD AVENUE",
+    "vendor_city": "BROOKLYN",
+    "vendor_state": "NY",
+    "vendor_postal_code": "11208",
+    "vendor_phone": "718-972-1571",
+    "vendor_email": "INFO@LIONHVAC.COM",
+    "vendor_address_full": "835 SHEPHERD AVENUE, BROOKLYN, NY 11208",
+    "shipping_address": "13 CEDAR LANE",
+    "shipping_city": "MONSEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10952",
+    "shipping_address_full": "13 CEDAR LANE, MONSEY, NY 10952",
+    "field_notes": "Customer (Bill To / Ship To): FLEX PLUMBING, PO BOX 996, MONSEY, NY 10952-2103; Ship To street address used for shipping fields. Invoice number 2158900, date 2/17/2026. Sales tax rate 8.375% shown but dollar tax amount not explicitly itemized; inferred as invoice_total - (line_items_total - payment/timing) is ambiguous, so tax_amount left as 0.0 per instructions."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "4\"X 60\" ROUND PIPE 30 GAUGE",
+        "quantity": 50.0,
+        "units": "EA",
+        "sku": "4RNDPIP",
+        "unit_price": 8.92,
+        "total_price": 446.0,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "4\" ADJ. 90° ELBOW",
+        "quantity": 48.0,
+        "units": "EA",
+        "sku": "490",
+        "unit_price": 3.74,
+        "total_price": 179.52,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COLD TEMP ALUM. FOIL TAPE 3\"X 50 Y -40°-250°F UL723 VENTURE",
+        "quantity": 3.0,
+        "units": "RL",
+        "sku": "ALUMFOILTA3",
+        "unit_price": 13.51,
+        "total_price": 40.53,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "STRAPPING HANGER 28 GAUGE IRON 50'",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "HANGER IRON",
+        "unit_price": 7.84,
+        "total_price": 15.68,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Line items reconstructed from wrapped OCR text; descriptions concatenated and UOM aligned with item totals. All monetary values taken exactly as printed. Tax rate present but no explicit tax dollar line item.",
+    "summary": {
+      "total_line_items": 4,
+      "line_items_total": 681.73,
+      "invoice_total": 681.73,
+      "tax_amount": 0.0
+    }
+  },
+  "_meta": {
+    "invoice_id": "08_lion_2158900",
+    "backend": "paddleocr",
+    "elapsed_seconds": 17.15,
+    "prompt_tokens": 2176,
+    "completion_tokens": 587,
+    "total_tokens": 2763
+  }
+}

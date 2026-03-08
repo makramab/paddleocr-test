@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice — {{ data.vendor_info.vendor_name or "Detail" }}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 2rem; max-width: 1100px; margin: 0 auto; }
+    a.back { display: inline-block; margin-bottom: 1.2rem; color: #0d6efd; text-decoration: none; font-size: 0.9rem; }
+    a.back:hover { text-decoration: underline; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.3rem; }
+    .subtitle { color: #555; font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+    /* cards */
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+    @media (max-width: 700px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-card { background: #fff; border-radius: 8px; padding: 1.1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .info-card h3 { font-size: 0.95rem; color: #16213e; margin-bottom: 0.6rem; border-bottom: 1px solid #eee; padding-bottom: 0.4rem; }
+    .info-card dl { display: grid; grid-template-columns: auto 1fr; gap: 0.25rem 0.8rem; font-size: 0.88rem; }
+    .info-card dt { font-weight: 600; color: #444; white-space: nowrap; }
+    .info-card dd { color: #333; }
+
+    /* notes */
+    .notes { background: #fff8e1; border-left: 4px solid #ffc107; border-radius: 4px; padding: 0.8rem 1rem; margin-bottom: 1.5rem; font-size: 0.85rem; line-height: 1.5; }
+    .notes strong { display: block; margin-bottom: 0.3rem; }
+
+    /* table */
+    .table-wrap { overflow-x: auto; margin-bottom: 1.5rem; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    th { background: #16213e; color: #fff; text-align: left; padding: 0.7rem 0.9rem; font-size: 0.85rem; font-weight: 600; }
+    td { padding: 0.6rem 0.9rem; font-size: 0.88rem; border-bottom: 1px solid #eee; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #f0f4ff; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+    /* summary */
+    .summary { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .summary-card { background: #fff; border-radius: 8px; padding: 1rem 1.4rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); text-align: center; min-width: 140px; }
+    .summary-card .label { font-size: 0.78rem; color: #666; text-transform: uppercase; letter-spacing: 0.03em; }
+    .summary-card .value { font-size: 1.3rem; font-weight: 700; color: #16213e; margin-top: 0.2rem; }
+
+    /* meta */
+    .meta-bar { margin-top: 1.5rem; padding: 0.7rem 1rem; background: #eee; border-radius: 6px; font-size: 0.8rem; color: #555; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .meta-bar span strong { color: #333; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/">&larr; All Results</a>
+
+  <h1>{{ data.vendor_info.vendor_name or "Invoice" }}</h1>
+  {% if data._meta %}
+    <div class="subtitle">Invoice {{ data._meta.invoice_id }} &middot; {{ data._meta.backend }} backend</div>
+  {% endif %}
+
+  <!-- Vendor & Shipping Info -->
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>Vendor / Bill To</h3>
+      <dl>
+        {% if data.vendor_info.vendor_address_full %}<dt>Address</dt><dd>{{ data.vendor_info.vendor_address_full }}</dd>{% endif %}
+        {% if data.vendor_info.vendor_phone %}<dt>Phone</dt><dd>{{ data.vendor_info.vendor_phone }}</dd>{% endif %}
+        {% if data.vendor_info.vendor_email %}<dt>Email</dt><dd>{{ data.vendor_info.vendor_email }}</dd>{% endif %}
+      </dl>
+    </div>
+    <div class="info-card">
+      <h3>Ship To</h3>
+      <dl>
+        {% if data.vendor_info.shipping_address_full %}<dt>Address</dt><dd>{{ data.vendor_info.shipping_address_full }}</dd>{% endif %}
+        {% if data.vendor_info.shipping_city %}<dt>City</dt><dd>{{ data.vendor_info.shipping_city }}, {{ data.vendor_info.shipping_state }} {{ data.vendor_info.shipping_postal_code }}</dd>{% endif %}
+      </dl>
+    </div>
+  </div>
+
+  <!-- Notes -->
+  {% if data.vendor_info.field_notes or (data.table_data and data.table_data.extraction_notes) %}
+  <div class="notes">
+    {% if data.vendor_info.field_notes %}
+      <strong>Field Notes</strong>{{ data.vendor_info.field_notes }}
+    {% endif %}
+    {% if data.table_data and data.table_data.extraction_notes %}
+      <br><br><strong>Extraction Notes</strong>{{ data.table_data.extraction_notes }}
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <!-- Line Items Table -->
+  {% if data.table_data and data.table_data.line_items %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Description</th>
+          <th>SKU</th>
+          <th class="num">Qty</th>
+          <th>Units</th>
+          <th class="num">Unit Price</th>
+          <th class="num">Total</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in data.table_data.line_items %}
+        <tr>
+          <td>{{ item.sort_order }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.sku or "—" }}</td>
+          <td class="num">{{ item.quantity }}</td>
+          <td>{{ item.units or "—" }}</td>
+          <td class="num">${{ "%.2f"|format(item.unit_price) }}</td>
+          <td class="num">${{ "%.2f"|format(item.total_price) }}</td>
+          <td>{{ item.purchase_type or "—" }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+  <!-- Summary -->
+  {% if data.table_data and data.table_data.summary %}
+  <div class="summary">
+    <div class="summary-card">
+      <div class="label">Line Items</div>
+      <div class="value">{{ data.table_data.summary.total_line_items }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Subtotal</div>
+      <div class="value">${{ "%.2f"|format(data.table_data.summary.line_items_total) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Tax</div>
+      <div class="value">${{ "%.2f"|format(data.table_data.summary.tax_amount) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Invoice Total</div>
+      <div class="value">${{ "%.2f"|format(data.table_data.summary.invoice_total) }}</div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Meta -->
+  {% if data._meta %}
+  <div class="meta-bar">
+    <span><strong>Backend:</strong> {{ data._meta.backend }}</span>
+    <span><strong>Time:</strong> {{ data._meta.elapsed_seconds }}s</span>
+    <span><strong>Tokens:</strong> {{ data._meta.total_tokens }} ({{ data._meta.prompt_tokens }}p / {{ data._meta.completion_tokens }}c)</span>
+  </div>
+  {% endif %}
+</body>
+</html>

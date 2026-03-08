@@ -1,0 +1,247 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "PYRAMID PLUMBING SUPPLY",
+    "vendor_address": "30 MELNICK DRIVE",
+    "vendor_city": "MONSEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "845.205.4051",
+    "vendor_email": "SALES@PYRAMIDPS.COM",
+    "vendor_address_full": "30 MELNICK DRIVE, MONSEY, NY 10952",
+    "shipping_address": "103 SPRING VALLEY ROUTE",
+    "shipping_city": "SPRING VALLEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10977",
+    "shipping_address_full": "103 SPRING VALLEY ROUTE, SPRING VALLEY, NY 10977",
+    "field_notes": "Sold To address '32 Polnoya Rd Spring Valley NY 10977' is billing and not used for shipping fields. Some minor OCR typos (e.g., 'Mresc', 'Su Total') corrected logically in interpretation only."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "1/2\" X 3-1/2\" X 8\" PEX-A F1960 PEX STUB OUT ELBOW + FLANGE (BOX 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "SP*858268",
+        "unit_price": 8.85,
+        "total_price": 35.4,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "RAVEN 10 YARDS COPPER CLEANER OPEN MESH - ORANGE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "2349798",
+        "unit_price": 13.97,
+        "total_price": 13.97,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW 3/4'' SWT F/P BALL VALVE 150WSP 600WOG UL/FMCSA&UPC LEAD FREE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "1162296",
+        "unit_price": 8.31,
+        "total_price": 8.31,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW 4612-NL 1/2'' MIP/SWT BOILER DRAIN -100 PCS IN BOX-",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "1162391",
+        "unit_price": 7.69,
+        "total_price": 15.38,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "MILL ROSE: 1/2\" X 1429\" BLUE MONSTER THREAD SEAL TAPE",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "2348692",
+        "unit_price": 4.21,
+        "total_price": 8.42,
+        "sort_order": 5,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "HOLDRITE: SUPPORT BRACKET 20\" X 2\" GALVANIZED 1/2\", 3/4\", 1 PEXRITE STEEL STUB BRACKET (BX QT 50)",
+        "quantity": 5.0,
+        "units": "EA",
+        "sku": "3017556",
+        "unit_price": 3.15,
+        "total_price": 15.75,
+        "sort_order": 6,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: COPPER TEE 1-1/4' LF (BOX 45, CASE 45)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9001480",
+        "unit_price": 12.22,
+        "total_price": 24.44,
+        "sort_order": 7,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: COPPER COUPLING 1-1/4'' LF",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9001154",
+        "unit_price": 3.78,
+        "total_price": 7.56,
+        "sort_order": 8,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: COPPER COUPLING 1-1/4'' 1'' LF",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9001179",
+        "unit_price": 4.83,
+        "total_price": 9.66,
+        "sort_order": 9,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: COPPER TEE 1'' LF (BOX 10, CASE 70)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9001479",
+        "unit_price": 8.85,
+        "total_price": 17.7,
+        "sort_order": 10,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: COPPER COUPLING 1' LF (BOX, CASE 160)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9001153",
+        "unit_price": 2.09,
+        "total_price": 4.18,
+        "sort_order": 11,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: COPPER COUPLING 1 3/4'' LF",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9001176",
+        "unit_price": 3.48,
+        "total_price": 6.96,
+        "sort_order": 12,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1\" PEX-A F1960 TEE PLASTIC BAG-10 BOX-60",
+        "quantity": 5.0,
+        "units": "EA",
+        "sku": "SP*858153",
+        "unit_price": 3.68,
+        "total_price": 18.4,
+        "sort_order": 13,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 TEE PLASTIC BAG-10 BOX-150",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "SP*858152",
+        "unit_price": 1.98,
+        "total_price": 7.92,
+        "sort_order": 14,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 ELBOW PLASTIC BAG-10 BOX-500",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "SP*858125",
+        "unit_price": 1.43,
+        "total_price": 8.58,
+        "sort_order": 15,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "HOLDRITE PEX STUB OUT CLAMP 1/2 IN (BX QT 50)",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "1073463",
+        "unit_price": 1.73,
+        "total_price": 17.3,
+        "sort_order": 16,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 ELBOW PLASTIC BAG-25 BOX-250",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "SP*858124",
+        "unit_price": 1.14,
+        "total_price": 11.4,
+        "sort_order": 17,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 PLUG PLASTIC BAG-50 BOX-1500",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "SP*858145",
+        "unit_price": 0.69,
+        "total_price": 6.9,
+        "sort_order": 18,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "ROD 3/8 IN X 6 FT THREADED ROD - ZINC PLATED (QTY 25)",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "1073552",
+        "unit_price": 2.8,
+        "total_price": 2.8,
+        "sort_order": 19,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 SLEEVE WITH STOP BAG-50 BOX-2000",
+        "quantity": 50.0,
+        "units": "EA",
+        "sku": "SP*858178",
+        "unit_price": 0.38,
+        "total_price": 19.0,
+        "sort_order": 20,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 SLEEVE WITH STOP BAG QTY - 100",
+        "quantity": 100.0,
+        "units": "EA",
+        "sku": "SP*858176",
+        "unit_price": 0.2,
+        "total_price": 20.0,
+        "sort_order": 21,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Invoice #: 317477. Invoice Date: 02/17/2026. Terms: NET 30. Ship Via: PICK UP. Customer: FLEX PLUMBING. Merchandise subtotal 280.03, freight 0.00, misc charges 0.00, tax 23.45 (Tax code 002), invoice total 303.48. Line item 20 shows '50 501 EA'; interpreted shipped quantity as 50 and ignored '501' as OCR noise since extension and unit price match 50 * 0.38.",
+    "summary": {
+      "total_line_items": 21,
+      "line_items_total": 280.03,
+      "invoice_total": 303.48,
+      "tax_amount": 23.45
+    }
+  },
+  "_meta": {
+    "backend": "paddleocr",
+    "elapsed_seconds": 22.19,
+    "prompt_tokens": 3206,
+    "completion_tokens": 1721,
+    "total_tokens": 4927
+  }
+}

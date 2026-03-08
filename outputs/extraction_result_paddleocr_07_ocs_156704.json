@@ -1,0 +1,58 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "OCS INDUSTRIES",
+    "vendor_address": null,
+    "vendor_city": null,
+    "vendor_state": null,
+    "vendor_postal_code": null,
+    "vendor_phone": "718-338-5111",
+    "vendor_email": null,
+    "vendor_address_full": null,
+    "shipping_address": "P O BOX 996",
+    "shipping_city": "MONSEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10952",
+    "shipping_address_full": "P O BOX 996, MONSEY, NY 10952",
+    "field_notes": "Customer appears to be FLEX PLUMBING / PESACH FELBERBAUM at P.O. BOX 996, MONSEY, NY 10952. Street address '16 AMSTERDAM AVE' present but not clearly labeled as billing vs shipping; only the boxed address with FLEX PLUMBING is treated as shipping."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "NEW FBS CABINET",
+        "quantity": 2.0,
+        "units": null,
+        "sku": "NC636B",
+        "unit_price": 107.5,
+        "total_price": 215.0,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "636 COPPER ELEMENT",
+        "quantity": 2.0,
+        "units": null,
+        "sku": "CE636",
+        "unit_price": 107.5,
+        "total_price": 215.0,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "QTY SHIP'D and QTY ORD both appear as '2' for each line and were used for quantity. Discount column present in header but no values shown, so no discounts applied. Dates like 02/19/26 kept as-is (likely 2026) but not mapped to explicit fields in this schema.",
+    "summary": {
+      "total_line_items": 2,
+      "line_items_total": 430.0,
+      "invoice_total": 430.0,
+      "tax_amount": 0.0
+    }
+  },
+  "_meta": {
+    "invoice_id": "07_ocs_156704",
+    "backend": "paddleocr",
+    "elapsed_seconds": 7.63,
+    "prompt_tokens": 2009,
+    "completion_tokens": 391,
+    "total_tokens": 2400
+  }
+}

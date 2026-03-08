@@ -1,0 +1,48 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "BECKERLE LUMBER SUPPLY",
+    "vendor_address": "3 CHESTNUT STREET",
+    "vendor_city": "SPRING VALLEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10977",
+    "vendor_phone": "(845) 356-1600",
+    "vendor_email": null,
+    "vendor_address_full": "3 CHESTNUT STREET, SPRING VALLEY, NY 10977",
+    "shipping_address": "32 POLNOYA ROAD UNIT 304",
+    "shipping_city": "NEW SQUARE",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10977",
+    "shipping_address_full": "32 POLNOYA ROAD UNIT 304, NEW SQUARE, NY 10977",
+    "field_notes": "Customer appears to be Flex Plumbing / M P Friedman at 32 Polnoya Road Unit 304, New Square NY 10977. Shipping method: customer pickup. Vendor fax given as (845) 356-1620 but fax is not a required field so omitted."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "8X8X16 REG CONCRETE BLOCK 108P",
+        "quantity": 6.0,
+        "units": "EACH",
+        "sku": "BLOCK-8RBLP16",
+        "unit_price": 2.99,
+        "total_price": 17.94,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Single material line item. Quantity and pricing taken from Quantity/UM/Price/Amount lines; subtotal matches extension.",
+    "summary": {
+      "total_line_items": 1,
+      "line_items_total": 17.94,
+      "invoice_total": 19.44,
+      "tax_amount": 1.5
+    }
+  },
+  "_meta": {
+    "invoice_id": "10_beckerle_200930",
+    "backend": "paddleocr",
+    "elapsed_seconds": 8.77,
+    "prompt_tokens": 2041,
+    "completion_tokens": 343,
+    "total_tokens": 2384
+  }
+}

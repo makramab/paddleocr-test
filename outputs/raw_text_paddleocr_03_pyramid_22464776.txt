@@ -1,0 +1,179 @@
+pyramid
+INVOICE
+plumbing supply
+T.845.205.4051 | 30 Melnick Dr. Monsey, NY 10952
+1/1
+Page
+F. 845.205.4061 |sales@pyramidps.com
+Ship To
+Sold To
+13 Cedar Ln
+Flex Plumbing
+13 Cedar Ln
+32 Polnoya Rd
+Spring Valley NY 10977
+Monsey NY 10952
+Ship Via
+Customer #
+Order Date
+Sales Order #
+Buyer
+Customer P/0 #
+Salesman
+1004
+0004500
+02/24/2026
+318849
+Dor ian
+PICK UP
+Invoice #
+Invoice Date
+Ship Date
+Freight Terms
+Job Number
+Terms
+NET 30
+318849
+02/25/2026
+02/24/26
+PREPAID
+IN
+UOM
+NET
+ONTY
+ONTY
+ONTY
+PRODUCT
+DISCS
+EXTENSION
+SHIP
+B/O
+PRICE
+ORD
+NUMBER
+DESCRIPTION
+1
+100
+100
+EA
+0.38
+NET
+SP*858178
+3/4" PEX-A F1960 SLEEVE WITH
+$38.00
+STOP BAG-50 BOX-2000
+2
+200
+200
+EA
+0.17
+NET
+$34.00
+SP*858176
+1/2" PEX-A F1960 SLEEVE WITH
+STOP BAG QTY - 100
+3
+50
+50
+EA
+1.14
+NET
+$57.00
+SP*858124
+1/2" PEX-A F1960 ELBOW PLASTI
+C BAG-25 BOX-250
+4
+10
+10
+1" X 3/4" PEX-A F1960
+EA
+2.46
+NET
+$24.60
+SP*858138
+COUPLING PLASTIC BAG-25
+BOX-150
+5
+20
+20
+EA
+1.32
+NET
+SP*858139
+1/2" X 3/4" PEX-A F1960
+$26.40
+COUPLING PLASTIC BAG-100
+BOX-500
+6
+11
+11
+EA
+SP*858163
+3/4" X 1/2" X 3/4" PEX-A
+1.89
+NET
+$20.79
+F1960 REDUCING TEE PLASTIC
+7
+20
+20
+EA
+3.21
+SP*858157
+1" X 1" X 1/2" PEX-A F1960
+NET
+$64.20
+REDUCING TEE PLASTIC (BAG 10,
+CASE 80)
+8
+20
+20)
+EA
+1.67
+NET
+$33.40
+SP*858164
+3/4" X 3/4" X 1/2" PEX-A
+F1960 REDUCING TEE PLASTIC-10
+BOX-100
+9
+24
+24
+EA
+1.56
+NET
+SP*858162
+3/4" X 1/2" X 1/2" PEX-A
+$37.44
+F1960 REDUCING TEE PLASTIC
+(BAG 60, CASE 240)
+***
+***
+30-day return policy. 25% restocking fee
+Merchandise
+335.83
+**
+**
+ABSOLUTELY NO RETURNS ON
+0.00
+Freight
+rder lecoc TooChcl
+Mresc Charges
+0.00
+***********
+Sub Total
+335.83
+Terms & Conditions
+0.00
+axable
+No return or cancellation on special order or
+0.00
+non-stock items. Must be in original seald package
+Tax (002)
+ n
+TOTAL
+$335.83
+can be found online at www.pyramidps.com/terms
+Sent Copy
+Pay By 03/27/2026
+Writer: KE

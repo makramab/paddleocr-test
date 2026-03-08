@@ -1,0 +1,350 @@
+pyramid
+INVOICE
+plumbing supply
+T.845.205.4051 | 30 Melnick Dr. Monsey, NY 10952
+Page
+1/2
+F. 845.205.4061 |sales@pyramidps.com
+Ship To
+Sold To
+Flex Plumbing
+103 Spring Valley Rt
+32 Polnoya Rd
+Spring Valley NY 10977
+Buyer
+Ship Via
+Customer #
+Order Date
+Sales Order #
+Customer P/0 #
+Salesman
+02/16/2026
+317477
+1004
+0004500
+Patric
+PICK UP
+Invoice #
+Invoice Date
+Ship Date
+Freight Terms
+Job Number
+Terms
+NET 30
+317477
+02/17/2026
+02/16/26
+PREPAID
+IN
+UOM NET
+ONTY
+ONTY
+ONTY
+PRODUCT
+DISCS EXTENSION
+SHIP
+B/O
+PRICE
+ORD
+NUMBER
+DESCRIPTION
+1
+4
+EA
+8.85
+NET
+$35.40
+4
+SP*858268
+1/2" X 3-1/2" X 8" PEX-A
+F1960 PEX STUB OUT ELBOW +
+FLANGE (BOX 25)
+2
+1
+1
+2349798
+EA
+13.97
+NET
+$13.97
+RAVEN 10 YARDS COPPER CLEANER
+OPEN MESH - ORANGE
+3
+EA
+1
+1
+1162296
+8.31
+NET
+$8.31
+EVERFLOW 3/4'' SWT F/P BALL
+VALVE 150WSP 600WOG
+UL/FMCSA&UPC LEAD FREE
+4
+2
+2
+7.69
+1162391
+EVERFLOW 4612-NL 1/2'' MIP/SWT EA
+NET
+$15.38
+BOILER DRAIN -100
+pcs in box-
+5
+2
+2
+2348692
+EA
+4.21
+NET
+$8.42
+MILL ROSE: 1/2" X 1429" BLUE
+MONSTER THREAD SEAL TAPE
+6
+5
+5
+3.15
+3017556
+HOLDRITE: SUPPORT BRACKET 20"
+EA
+NET
+$15.75
+X 2" GALVANIZED 1/2", 3/4" ,
+1 PEXRITE Steel Stub BraCkEt
+(BX QT 50)
+7
+2
+2
+EA
+9001480
+EVERFLOW: COPPER TEE 1-1/4'
+12.22
+NET
+$24.44
+LF (BOX 45, CASE 45)
+8
+2
+2
+EA
+9001154
+3.78
+NET
+$7.56
+EVERFLOW: COPPER COUPLING
+1-1/4'' LF
+9
+2
+2
+EA
+9001179
+4.83
+NET
+$9.66
+EVERFLOW: COPPER COUPLING
+1-1/4'' 1'' LF
+10
+2
+2
+8.85
+9001479
+EVERFLOW: COPPER TEE 1'' LF
+EA
+NET
+$17.70
+(BOX 10, CASE 70)
+11
+2
+2
+EA
+2.09
+9001153
+EVERFLOW: COPPER COUPLING 1'
+NET
+$4.18
+LF (BOX, CASE 160)
+12
+2
+2
+EVERFLOW: COPPER COUPLING 1
+EA
+3.48
+9001176
+NET
+$6.96
+3/4'' LF
+13
+5
+5
+EA
+SP*858153
+1" PEX-A F1960 TEE PLASTIC
+3.68
+NET
+$18.40
+BAG-10 BOX-60
+]
+[
+CONTINUED
+
+pyramid
+INVOICE
+plumbing supply
+T.845.205.4051 | 30 Melnick Dr. Monsey, NY 10952
+2/2
+Page
+F. 845.205.4061 |sales@pyramidps.com
+Ship To
+Sold To
+Flex Plumbing
+103 Spring Valley Rt
+32 Polnoya Rd
+Spring Valley NY 10977
+Buyer
+Ship Via
+Customer #
+Order Date
+Sales Order #
+Customer P/0 #
+Salesman
+317477
+1004
+0004500
+02/16/2026
+Patric
+PICK UP
+Invoice #
+Invoice Date
+Ship Date
+Freight Terms
+Job Number
+Terms
+NET 30
+317477
+02/17/2026
+02/16/26
+PREPAID
+IN
+UOM
+NET
+ONTY
+ONTY
+ONTY
+PRODUCT
+DISCS
+EXTENSION
+ORD
+SHIP
+B/O
+PRICE
+NUMBER
+DESCRIPTION
+14
+4
+4
+SP*858152
+3/4" PEX-A F1960 TEE PLASTIC
+EA
+1.98
+NET
+$7.92
+BAG-10 BOX-150
+15
+6
+6
+EA
+SP*858125
+3/4" PEX-A F1960 ELBOW PLASTI
+1.43
+NET
+$8.58
+C BAG-10 BOX-500
+16
+10
+10
+1073463
+EA
+1.73
+HOLDRITE PEX STUB OUT CLAMP
+NET
+$17.30
+1/2 IN (BX QT 50)
+17
+10
+10
+EA
+1.14
+NET
+SP*858124
+1/2" PEX-A F1960 ELBOW PLASTI
+$11.40
+C BAG-25 BOX-250
+18
+10
+10
+EA
+0.69
+SP*858145
+1/2" PEX-A F1960 PLUG PLASTIC
+NET
+$6.90
+BAG-50 BOX-1500
+19
+1
+1
+EA
+2.80
+1073552
+ROD 3/8 IN X 6 FT THREADED ROD
+NET
+$2.80
+- ZINC PLATED (QTY 25)
+20
+50
+501
+EA
+0.38
+NET
+SP*858178
+3/4" PEX-A F1960 SLEEVE WITH
+$19.00
+STOP BAG-50 BOX-2000
+21
+100
+100
+EA
+0.20
+NET
+$20.00
+SP*858176
+1/2" PEX-A F1960 SLEEVE WITH
+STOP BAG QTY - 100
+***
+**
+30-day return policy. 25% restocking fee
+280.03
+Merchandise
+**
+**
+ABSOLUTELY NO RETURNS ON
+0.00
+Freight
+*Special orders, Electronics, Tools, Chemicals 
+Mresc Charges
+0.00
+***********
+Su Total
+280.03
+Terms & Conditions
+280.03
+axable
+No return or cancellation on special order or
+23.45
+non-stock items. Must be in original seald package
+Tax (002)
+ 
+TOTAL
+$303.48
+can be found online at www.pyramidps.com/terms
+Sent Copy
+Pay By 03/19/2026
+Writer: JF

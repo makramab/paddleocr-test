@@ -1,0 +1,247 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "PYRAMID PLUMBING SUPPLY",
+    "vendor_address": "30 MELNICK DRIVE",
+    "vendor_city": "MONSEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "845-205-4051",
+    "vendor_email": "SALES@PYRAMIDPS.COM",
+    "vendor_address_full": "30 MELNICK DRIVE, MONSEY, NY 10952",
+    "shipping_address": "103 SPRING VALLEY ROUTE",
+    "shipping_city": null,
+    "shipping_state": null,
+    "shipping_postal_code": null,
+    "shipping_address_full": "103 SPRING VALLEY ROUTE",
+    "field_notes": "Customer (Sold To): FLEX PLUMBING, 32 POLNOYA ROAD, SPRING VALLEY, NY 10977. Monetary summary fields not visible in OCR snippet; set to 0.0. Many SKUs and all prices/quantities not visible; line items captured only as descriptions with purchase_type=materials."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "1/2\" X 3-1/2\" X 8\" PEX-A F1960 PEX STUB OUT ELBOW + FLANGE (BOX 25)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858268",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "10 YARDS COPPER CLEANER OPEN MESH - ORANGE",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "2349798",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" SWI F/P BALL VALVE 150WSP 600WOG UL/FM CSA S&UPC LEAD FREE",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "1162296",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" MIP/SWT BOILER DRAIN - 100 PCS IN BOX",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "1162391",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" X .1429\" BLUE MONSTER THREAD SEAL TAPE",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "2348692",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 5,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SUPPORT BRACKET 20\" X 2\" GALVANIZED 1/2\", 3/4\", 1\" PEXRITE STEEL STUB BRACKET (BOX QTY 50)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "3017556",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 6,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER TEE 1-1/4\" LF (BOX 45, CASE 45)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "9001480",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 7,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER COUPLING 1-1/4\" LF",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "9001154",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 8,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER COUPLING 1-1/4\" X 1\" LF",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "9001179",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 9,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER TEE 1\" LF (BOX 10, CASE 70)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "9001479",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 10,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER COUPLING 1\" LF (BOX, CASE 160)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "9001153",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 11,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER COUPLING 1\" X 3/4\" LF",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "9001176",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 12,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1\" PEX-A F1960 TEE PLASTIC BAG-10 BOX-60",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858153",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 13,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 TEE PLASTIC BAG-10 BOX-150",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858152",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 14,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 ELBOW PLASTIC BAG-10 BOX-500",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858124",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 15,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX STUB OUT CLAMP 1/2 IN (BOX QTY 50)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "1073463",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 16,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 ELBOW PLASTIC BAG-25 BOX-250",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858145",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 17,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 PLUG PLASTIC BAG-50 BOX-1500",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858125",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 18,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/8 IN X 6 FT THREADED ROD - ZINC PLATED (QTY 25)",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "1073552",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 19,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 SLEEVE WITH STOP BAG-50 BOX-2000",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858178",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 20,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 SLEEVE WITH STOP BAG QTY 100",
+        "quantity": 0.0,
+        "units": null,
+        "sku": "SP*858176",
+        "unit_price": 0.0,
+        "total_price": 0.0,
+        "sort_order": 21,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "The OCR text does not show the columns for quantities, units, unit prices, extensions, or the monetary summary (merchandise, freight, tax, total). All numeric pricing and quantity fields are therefore set to 0.0 as placeholders, since the instructions forbid guessing. Tax amount and invoice total are likewise not visible. Several SKUs inferred from placement beside descriptions; where multiple codes appear in a block, they have been matched in sequence, but exact mapping could not be 100% verified from OCR alone.",
+    "summary": {
+      "total_line_items": 21,
+      "line_items_total": 0.0,
+      "invoice_total": 0.0,
+      "tax_amount": 0.0
+    }
+  },
+  "_meta": {
+    "backend": "tesseract",
+    "elapsed_seconds": 20.97,
+    "prompt_tokens": 2725,
+    "completion_tokens": 1585,
+    "total_tokens": 4310
+  }
+}

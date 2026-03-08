@@ -1,0 +1,85 @@
+Spring Valley Store
+Beckerle Lumber Supply
+CUSTOMER COPY
+P.O. Box 649
+3 Chestnut St
+Spring Valley NY 10977
+(845) 356-1600
+BECKERLE
+Fax: (845) 356-1620
+INVOICE
+1
+OF
+1
+2602-200930
+PAGE
+ACCOUNT
+JOB
+SOLD TO
+JOB ADDRESS
+0
+S0004802
+Flex Plumbing
+Flex Plumbing
+SOLD ON
+2/24/2026 1:56:49 PM
+M P Friedman
+M P Friedman
+32 Polnoya Road Unit 304
+32 Polnoya Road Unit 304
+CUST PICKUP
+New Square NY 10977
+New Square NY 10977
+1000
+BRANCH
+845 213-3539
+CUSTOMER PO#
+STATION
+T10
+1252
+[SV]
+CASHIER
+Happy US Semiquincentennial
+SALESPERSON
+USA Born July 4 1776
+ORDER ENTRY
+Quantity
+UM
+D
+T
+Price
+Per
+Amount
+Item
+Description
+Y
+6
+EACH
+2.9900
+EACH
+17.94
+BLOCK-8RBLP16
+8X8X16 REG CONCRETE BLOCK 108p
+
+AL: VISA CREDIT
+SALE: 19.44
+Entry Mode: CHIP
+AID:A0000000031010
+SubTotal
+17.94
+Payment Method(s) Buyer: VICTOR
+Sales Tax
+1.50
+ROC 8.375%
+Visa
+19.44 ####3176 09449G
+Deposit
+Please Pay This
+19.44
+Amount
+CNDITIONS OF SALE:A S  
+days of purchase and be accompanied by a sales invoice. A
+handling charge of 20% will be made on all material ACCEPTED
+t  n AY n  
+NON STOCK items.
+Signature VICTOR

@@ -1,0 +1,128 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "PYRAMID PLUMBING SUPPLY",
+    "vendor_address": "30 MELNICK DRIVE",
+    "vendor_city": "MONSEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "845.205.4051",
+    "vendor_email": "SALES@PYRAMIDPS.COM",
+    "vendor_address_full": "30 MELNICK DRIVE, MONSEY, NY 10952",
+    "shipping_address": "13 CEDAR LANE",
+    "shipping_city": "SPRING VALLEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10977",
+    "shipping_address_full": "13 CEDAR LANE, SPRING VALLEY, NY 10977",
+    "field_notes": "Sold To customer is Flex Plumbing at 13 Cedar Lane, Monsey NY 10952; Ship To is 13 Cedar Lane, Spring Valley NY 10977. Customer/billing details not requested by schema, so not included."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "3/4\" PEX-A F1960 SLEEVE WITH STOP BAG-50 BOX-2000",
+        "quantity": 100.0,
+        "units": "EA",
+        "sku": "SP*858178",
+        "unit_price": 0.38,
+        "total_price": 38.0,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 SLEEVE WITH STOP BAG QTY - 100",
+        "quantity": 200.0,
+        "units": "EA",
+        "sku": "SP*858176",
+        "unit_price": 0.17,
+        "total_price": 34.0,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 ELBOW PLASTIC BAG-25 BOX-250",
+        "quantity": 50.0,
+        "units": "EA",
+        "sku": "SP*858124",
+        "unit_price": 1.14,
+        "total_price": 57.0,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1\" X 3/4\" PEX-A F1960 COUPLING PLASTIC BAG-25 BOX-150",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "SP*858138",
+        "unit_price": 2.46,
+        "total_price": 24.6,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" X 3/4\" PEX-A F1960 COUPLING PLASTIC BAG-100 BOX-500",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "SP*858139",
+        "unit_price": 1.32,
+        "total_price": 26.4,
+        "sort_order": 5,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" X 1/2\" X 3/4\" PEX-A F1960 REDUCING TEE PLASTIC",
+        "quantity": 11.0,
+        "units": "EA",
+        "sku": "SP*858163",
+        "unit_price": 1.89,
+        "total_price": 20.79,
+        "sort_order": 6,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1\" X 1\" X 1/2\" PEX-A F1960 REDUCING TEE PLASTIC (BAG 10, CASE 80)",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "SP*858157",
+        "unit_price": 3.21,
+        "total_price": 64.2,
+        "sort_order": 7,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" X 3/4\" X 1/2\" PEX-A F1960 REDUCING TEE PLASTIC-10 BOX-100",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "SP*858164",
+        "unit_price": 1.67,
+        "total_price": 33.4,
+        "sort_order": 8,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" X 1/2\" X 1/2\" PEX-A F1960 REDUCING TEE PLASTIC (BAG 60, CASE 240)",
+        "quantity": 24.0,
+        "units": "EA",
+        "sku": "SP*858162",
+        "unit_price": 1.56,
+        "total_price": 37.44,
+        "sort_order": 9,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Invoice #: 318849; Invoice Date: 02/25/2026; Order Date: 02/24/2026; Ship Date: 02/24/2026; Terms: NET 30; Ship Via: PICK UP; Freight Terms: PREPAID. Tax shows as Tax (002) 0.00. All line items treated as materials.",
+    "summary": {
+      "total_line_items": 9,
+      "line_items_total": 335.83,
+      "invoice_total": 335.83,
+      "tax_amount": 0.0
+    }
+  },
+  "_meta": {
+    "invoice_id": "03_pyramid_22464776",
+    "backend": "paddleocr",
+    "elapsed_seconds": 16.82,
+    "prompt_tokens": 2482,
+    "completion_tokens": 959,
+    "total_tokens": 3441
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "PYRAMID PLUMBING SUPPLY",
+    "vendor_address": "30 MELNICK DRIVE",
+    "vendor_city": "MONSEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "845.205.4051",
+    "vendor_email": "SALES@PYRAMIDPS.COM",
+    "vendor_address_full": "30 MELNICK DRIVE, MONSEY, NY 10952",
+    "shipping_address": "32 POLNOYA ROAD",
+    "shipping_city": "SPRING VALLEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10977",
+    "shipping_address_full": "32 POLNOYA ROAD, SPRING VALLEY, NY 10977",
+    "field_notes": "Customer name appears as FLEX PLUMBING / GEL CT; street OCR as 'Polnoya Rd' assumed 'POLNOYA ROAD'. Document date 02/15/2026, ship date 02/16/2026, due date 03/18/2026 implied by 'Pay By' but not requested in schema."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "PVC WYE 3'' 2'' (BX QT 25)",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "9002531",
+        "unit_price": 3.74,
+        "total_price": 22.44,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 45 3'' (BX QT 20)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002428",
+        "unit_price": 2.35,
+        "total_price": 9.4,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 45 3'' (BX QT 20)",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "9002423",
+        "unit_price": 2.48,
+        "total_price": 7.44,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 90 3'' (BX QT 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002390",
+        "unit_price": 2.77,
+        "total_price": 11.08,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 3'' (BX QT 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002524",
+        "unit_price": 5.05,
+        "total_price": 20.2,
+        "sort_order": 5,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 3'' 1-1/2'' BX QT 20",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002467",
+        "unit_price": 2.94,
+        "total_price": 5.88,
+        "sort_order": 6,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 3'' 2 (BX QT 10)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002468",
+        "unit_price": 3.04,
+        "total_price": 6.08,
+        "sort_order": 7,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 2'' 1-1/2'' (BX QT 25)",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "9002529",
+        "unit_price": 2.29,
+        "total_price": 6.87,
+        "sort_order": 8,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: HEAVY DUTY NO HUB COUPLING 2'",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "9004657",
+        "unit_price": 7.22,
+        "total_price": 7.22,
+        "sort_order": 9,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "OATEY: 32 OZ PVC ALL WEATHER CLEAR CEMENT SOLVENT CEMENT",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "3003374",
+        "unit_price": 17.19,
+        "total_price": 17.19,
+        "sort_order": 10,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Line item amounts sum exactly to merchandise subtotal 113.80. Freight and misc charges are 0.00. Tax (002) is 9.53. Invoice total 123.33.",
+    "summary": {
+      "total_line_items": 10,
+      "line_items_total": 113.8,
+      "invoice_total": 123.33,
+      "tax_amount": 9.53
+    }
+  },
+  "_meta": {
+    "invoice_id": "02_pyramid_22421611",
+    "backend": "paddleocr",
+    "elapsed_seconds": 14.55,
+    "prompt_tokens": 2372,
+    "completion_tokens": 868,
+    "total_tokens": 3240
+  }
+}

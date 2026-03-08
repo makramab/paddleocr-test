@@ -1,0 +1,58 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "ROCKLAND HARDWARE & PAINT SUPPLY",
+    "vendor_address": "20 ROBERT PITT DRIVE",
+    "vendor_city": "MONSEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "(845) 271-3040",
+    "vendor_email": null,
+    "vendor_address_full": "20 ROBERT PITT DRIVE, MONSEY, NY 10952",
+    "shipping_address": "PO BOX 996",
+    "shipping_city": "MONSEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10952",
+    "shipping_address_full": "PO BOX 996, MONSEY, NY 10952",
+    "field_notes": "Customer (Sold To) name FLEX PLUMBING appears above PO BOX 996; invoice number 80927 /1; terms NET 15TH, tax code 001 ST#1 DEFAULT TAX CODE. Billing vs shipping appear merged; only one address given so used as shipping."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "SCREW DW PH CS 6X2 1#",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "5173661",
+        "unit_price": 7.99,
+        "total_price": 7.99,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SCREW DW PH CS 8X3 1#",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "5173695",
+        "unit_price": 7.99,
+        "total_price": 7.99,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Taxable merchandise total 15.98, non-taxable 0.00. Subtotal 15.98, tax amount 1.34, invoice total 17.32. Values are consistent: 15.98 + 1.34 = 17.32.",
+    "summary": {
+      "total_line_items": 2,
+      "line_items_total": 15.98,
+      "invoice_total": 17.32,
+      "tax_amount": 1.34
+    }
+  },
+  "_meta": {
+    "invoice_id": "09_rockland_080927",
+    "backend": "paddleocr",
+    "elapsed_seconds": 14.44,
+    "prompt_tokens": 1994,
+    "completion_tokens": 419,
+    "total_tokens": 2413
+  }
+}

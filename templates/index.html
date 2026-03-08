@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Viewer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 2rem; }
+    h1 { margin-bottom: 1.5rem; font-size: 1.6rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1rem; }
+    .card {
+      background: #fff; border-radius: 8px; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      text-decoration: none; color: inherit; transition: box-shadow 0.15s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .card h2 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #16213e; }
+    .card .meta { font-size: 0.85rem; color: #555; line-height: 1.6; }
+    .card .meta span { display: inline-block; background: #e8edf3; border-radius: 4px; padding: 0.15rem 0.5rem; margin-right: 0.4rem; margin-bottom: 0.3rem; }
+    .badge { display: inline-block; background: #0d6efd; color: #fff; border-radius: 4px; padding: 0.15rem 0.55rem; font-size: 0.8rem; margin-left: 0.4rem; }
+  </style>
+</head>
+<body>
+  <h1>Extraction Results</h1>
+  <div class="card-grid">
+    {% for r in results %}
+    <a class="card" href="/invoice/{{ r._filename }}">
+      <h2>
+        {{ r.vendor_info.vendor_name or "Unknown Vendor" }}
+        {% if r._meta and r._meta.invoice_id %}
+          <span class="badge">{{ r._meta.invoice_id }}</span>
+        {% endif %}
+      </h2>
+      <div class="meta">
+        {% if r.vendor_info.vendor_address_full %}
+          <div>{{ r.vendor_info.vendor_address_full }}</div>
+        {% endif %}
+        {% if r.table_data and r.table_data.summary %}
+          <span>{{ r.table_data.summary.total_line_items }} items</span>
+          <span>${{ "%.2f"|format(r.table_data.summary.invoice_total) }}</span>
+        {% endif %}
+        {% if r._meta %}
+          <span>{{ r._meta.backend }}</span>
+          <span>{{ r._meta.elapsed_seconds }}s</span>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</body>
+</html>

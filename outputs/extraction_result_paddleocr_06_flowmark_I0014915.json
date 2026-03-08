@@ -1,0 +1,68 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "FLOWMARK PLUMBING SUPPLY",
+    "vendor_address": "382 NY-59",
+    "vendor_city": "AIRMONT",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "845-244-4999",
+    "vendor_email": "SALES@FLOWMARKSUPPLY.COM",
+    "vendor_address_full": "382 NY-59, AIRMONT, NY 10952",
+    "shipping_address": "23 AUGUR ROAD",
+    "shipping_city": "AIRMONT",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10901",
+    "shipping_address_full": "23 AUGUR ROAD, AIRMONT, NY 10901",
+    "field_notes": "Customer (bill to) is FLEX PLUMBING, PO BOX 996, MONSEY, NY 10952 US; not required in output per schema."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "2\" PVC SCH 40 PIPE",
+        "quantity": 2.0,
+        "units": null,
+        "sku": "PVCP210",
+        "unit_price": 12.41,
+        "total_price": 24.82,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "LP102-338 3\" X 2\" PVC DWV REDUCING COUPLING",
+        "quantity": 3.0,
+        "units": null,
+        "sku": "PFRC32",
+        "unit_price": 2.06,
+        "total_price": 6.18,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "2.75 OZ. WD-40",
+        "quantity": 1.0,
+        "units": null,
+        "sku": "WD40",
+        "unit_price": 6.07,
+        "total_price": 6.07,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Document date 02/24/2026, terms NET 30, due date 03/26/2026, invoice number I-0014915, customer PO SO-0014915 not included as there are no fields in schema.",
+    "summary": {
+      "total_line_items": 3,
+      "line_items_total": 37.07,
+      "invoice_total": 40.18,
+      "tax_amount": 3.11
+    }
+  },
+  "_meta": {
+    "invoice_id": "06_flowmark_I0014915",
+    "backend": "paddleocr",
+    "elapsed_seconds": 9.31,
+    "prompt_tokens": 2018,
+    "completion_tokens": 435,
+    "total_tokens": 2453
+  }
+}

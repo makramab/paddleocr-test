@@ -1,0 +1,58 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "APCO FIRE SPECIALTY PRODUCTS",
+    "vendor_address": "4 BELMAR COURT",
+    "vendor_city": "SUFFERN",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10901",
+    "vendor_phone": "+18452841990",
+    "vendor_email": "INFO@APCOFIRE.COM",
+    "vendor_address_full": "4 BELMAR COURT, SUFFERN, NY 10901",
+    "shipping_address": "PO BOX 996",
+    "shipping_city": "MONSEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10952",
+    "shipping_address_full": "PO BOX 996, MONSEY, NY 10952",
+    "field_notes": "Bill To and Ship To are both Flex Plumbing, but with different street addresses; shipping address taken from the SHIP TO block (PO BOX 996). Invoice number 4349, date 02/02/2026, terms 30Days, due date 03/04/2026, PO# 'Flex Plumbing 01-30-2026' are present in text but not part of the specified schema."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "1\" ELBOW 90, BLK MAL",
+        "quantity": 40.0,
+        "units": null,
+        "sku": "BMNL0100",
+        "unit_price": 1.43,
+        "total_price": 57.2,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" F1960 x 3/4\" MIP PEX BRASS ADAPTER LF",
+        "quantity": 200.0,
+        "units": null,
+        "sku": "WPMA3434-NL",
+        "unit_price": 5.21,
+        "total_price": 1042.0,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Second SKU reconstructed as 'WPMA3434-NL' from split OCR text 'WPMA3434-' and 'NL' on following line. Line totals and subtotal match: 57.20 + 1,042.00 = 1,099.20. Tax of 92.06 produces invoice total 1,191.26, consistent with 'TOTAL DUE' amount.",
+    "summary": {
+      "total_line_items": 2,
+      "line_items_total": 1099.2,
+      "invoice_total": 1191.26,
+      "tax_amount": 92.06
+    }
+  },
+  "_meta": {
+    "invoice_id": "05_apco_4349",
+    "backend": "paddleocr",
+    "elapsed_seconds": 9.53,
+    "prompt_tokens": 1869,
+    "completion_tokens": 481,
+    "total_tokens": 2350
+  }
+}

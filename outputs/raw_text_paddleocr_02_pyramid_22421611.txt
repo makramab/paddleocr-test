@@ -1,0 +1,182 @@
+pyramid
+INVOICE
+plumbing supply
+T.845.205.4051 | 30 Melnick Dr. Monsey, NY 10952
+Page
+1/1
+F. 845.205.4061 |sales@pyramidps.com
+Ship To
+Sold To
+Flex Plumbing
+Gel Ct
+32 Polnoya Rd
+Spring Valley NY 10977
+Ship Via
+Customer #
+Order Date
+Sales Order #
+Buyer
+Customer P/0 #
+Salesman
+1004
+0004500
+02/15/2026
+317299
+PICK UP
+Marko
+Invoice #
+Ship Date
+Job Number
+Terms
+Invoice Date
+Freight Terms
+NET 30
+317299
+02/16/2026
+02/15/26
+PREPAID
+UOM
+NET
+IN
+ONTY
+ONTY
+ONTY
+PRODUCT
+DISCS
+EXTENSION
+B/O
+PRICE
+ORD
+SHIP
+NUMBER
+DESCRIPTION
+1
+6
+6
+EA
+3.74
+9002531
+PVC WYE 3'' 2'' (BX QT 25)
+NET
+$22.44
+2
+4
+4
+9002428
+PVC STREET 45 3'' (BX QT 20)
+EA
+2.35
+NET
+$9.40
+3
+3
+3
+9002423
+EA
+2.48
+PVC 45 3''
+(BX QT 20)
+NET
+$7.44
+4
+4
+4
+9002390
+PVC 90 3''
+(BX QT 25)
+EA
+2.77
+NET
+$11.08
+5
+4
+4
+9002524
+PVC WYE 3''
+EA
+5.05
+$20.20
+(BX QT 25)
+NET
+6
+2
+2
+EA
+2.94
+9002467
+PVC TEE 3''
+1-1/2'' BX QT 20
+NET
+$5.88
+7
+2
+2
+9002468
+2 (BX QT 10)
+EA
+3.04
+$6.08
+PVC TEE 3''
+NET
+8
+3
+3
+9002529
+PVC WYE 2'' 1-1/2'' (BX QT 25
+EA
+2.29
+NET
+$6.87
+9
+1
+1
+9004657
+EA
+7.22
+NET
+$7.22
+EVERFLOW: HEAVY DUTY NO HUB
+COUPLING 2'
+10
+1
+EA
+1
+3003374
+17.19
+NET
+$17.19
+OATEY: 32 OZ PVC ALL WEATHER
+CLEAR CEMENT SOLVENT CEMENT
+*****FINAL SALE/NO
+RETURNS/EXCEPTIONS*****
+***
+**
+30-day return policy. 25% restocking fee
+113.80
+Merchandise
+**
+**
+ABSOLUTELY NO RETURNS ON
+0.00
+Freight
+Special orders, Electronics, Tools, Chemicals
+*
+Mresc Charges
+0.00
+***********
+113.80
+Su Total
+Terms & Conditions
+113.80
+axable
+No return or cancellation on special order or
+9.53
+non-stock items. Must be in original seald package
+Tax (002)
+ 
+TOTAL
+$123.33
+can be found online at www.pyramidps.com/terms
+Sent Copy
+Pay By 03/18/2026
+Writer: KE

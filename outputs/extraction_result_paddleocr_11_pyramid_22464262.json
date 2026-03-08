@@ -1,0 +1,808 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "PYRAMID PLUMBING SUPPLY",
+    "vendor_address": "30 MELNICK DRIVE",
+    "vendor_city": "MONSEY",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10952",
+    "vendor_phone": "845-205-4051",
+    "vendor_email": "SALES@PYRAMIDPS.COM",
+    "vendor_address_full": "30 MELNICK DRIVE, MONSEY, NY 10952",
+    "shipping_address": "3 MARISA DRIVE",
+    "shipping_city": "SPRING VALLEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10977",
+    "shipping_address_full": "3 MARISA DRIVE, SPRING VALLEY, NY 10977",
+    "field_notes": "Customer (Sold To): FLEX PLUMBING, 32 POLNOYA ROAD, SPRING VALLEY NY 10977. All quantities are taken from QNTY SHIP column. Long descriptions reconstructed across line wraps based on OCR layout. Some minor OCR typos in descriptive text preserved as-is since they do not affect structured fields or pricing."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "PVC FOAM CORE PIPE 3'' X 20'",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "8001056",
+        "unit_price": 21.97,
+        "total_price": 87.88,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC FOAM CORE PIPE 2'' X 20'",
+        "quantity": 12.0,
+        "units": "EA",
+        "sku": "8001055",
+        "unit_price": 11.59,
+        "total_price": 139.08,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC FOAM CORE PIPE 1-1/2'' X 20'",
+        "quantity": 8.0,
+        "units": "EA",
+        "sku": "8001054",
+        "unit_price": 8.76,
+        "total_price": 70.08,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC P TRAP 2'' (BX QT 20)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002561",
+        "unit_price": 2.7,
+        "total_price": 5.4,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SIOUX CHIEF: FLANGE PVC TKO 3 HUB / IN 4 SS-SWVL TOILET CLOSET FLANGE",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "3063798",
+        "unit_price": 6.57,
+        "total_price": 13.14,
+        "sort_order": 5,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC COUPLING 3'' 2'' BOX QTY 20",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "9002311",
+        "unit_price": 1.95,
+        "total_price": 5.85,
+        "sort_order": 6,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC BUSHING 3'' FTG 2'' (BX QT 30",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "9002342",
+        "unit_price": 1.24,
+        "total_price": 1.24,
+        "sort_order": 7,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "J-HOOK (DWV) 3 IN - SIOUX CHIEF (BX QT 50)",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "3042351",
+        "unit_price": 0.86,
+        "total_price": 5.16,
+        "sort_order": 8,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 45 2'' (BX QT 50)",
+        "quantity": 15.0,
+        "units": "EA",
+        "sku": "9002422",
+        "unit_price": 0.87,
+        "total_price": 13.05,
+        "sort_order": 9,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 45 2' (BX QT 50)",
+        "quantity": 15.0,
+        "units": "EA",
+        "sku": "9002427",
+        "unit_price": 0.89,
+        "total_price": 13.35,
+        "sort_order": 10,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 90 3' (BX QT 25)",
+        "quantity": 18.0,
+        "units": "EA",
+        "sku": "9002390",
+        "unit_price": 2.77,
+        "total_price": 49.86,
+        "sort_order": 11,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 22 3'' (BX QT 20)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002433",
+        "unit_price": 2.43,
+        "total_price": 4.86,
+        "sort_order": 13,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 22 3'' (BX QT 20)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002438",
+        "unit_price": 3.77,
+        "total_price": 7.54,
+        "sort_order": 14,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC SCH 40 PIPE 3'' X 20'",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "2689095",
+        "unit_price": 37.46,
+        "total_price": 149.84,
+        "sort_order": 15,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SMOKE PIPE 30 GAUGE 4'' X 5 FT",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "8001147",
+        "unit_price": 13.81,
+        "total_price": 41.43,
+        "sort_order": 16,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SMOKE 90 STD (26) GAUGE",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9004220",
+        "unit_price": 5.79,
+        "total_price": 11.58,
+        "sort_order": 17,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 3'' 2'' (BX QT 25)",
+        "quantity": 8.0,
+        "units": "EA",
+        "sku": "9002531",
+        "unit_price": 3.74,
+        "total_price": 29.92,
+        "sort_order": 18,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 3'' 1-1/2'' (BX QT 15)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002530",
+        "unit_price": 3.39,
+        "total_price": 6.78,
+        "sort_order": 19,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 90 3'' (BX QT 20)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002397",
+        "unit_price": 3.31,
+        "total_price": 13.24,
+        "sort_order": 20,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 3'' (BX QT 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002524",
+        "unit_price": 5.05,
+        "total_price": 20.2,
+        "sort_order": 21,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 45 1-1/2'' (BX OT 100)",
+        "quantity": 15.0,
+        "units": "EA",
+        "sku": "9002421",
+        "unit_price": 0.59,
+        "total_price": 8.85,
+        "sort_order": 22,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 45 1-1/2'' (BX QT 100)",
+        "quantity": 15.0,
+        "units": "EA",
+        "sku": "9002426",
+        "unit_price": 0.56,
+        "total_price": 8.4,
+        "sort_order": 23,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 1-1/2'' (BX QT 100)",
+        "quantity": 8.0,
+        "units": "EA",
+        "sku": "9002459",
+        "unit_price": 1.04,
+        "total_price": 8.32,
+        "sort_order": 24,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 90 1-1/2'' (BX QT 100)",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "9002388",
+        "unit_price": 0.6,
+        "total_price": 12.0,
+        "sort_order": 25,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 1-1/2'' (BX QT 50)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002522",
+        "unit_price": 1.9,
+        "total_price": 7.6,
+        "sort_order": 26,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC COUPLING 1-1/2'' (BX QT 100)",
+        "quantity": 15.0,
+        "units": "EA",
+        "sku": "9002298",
+        "unit_price": 0.28,
+        "total_price": 4.2,
+        "sort_order": 27,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC CAP 1-1/2'' (BX QT 50)",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "9002356",
+        "unit_price": 1.13,
+        "total_price": 11.3,
+        "sort_order": 28,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 90 1-1/2' (BX QT 100)",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "9002395",
+        "unit_price": 0.77,
+        "total_price": 4.62,
+        "sort_order": 29,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "J-HOOK (DWV) 1-1/2 IN - SIOUX CHIEF (BX QT 50)",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "2681784",
+        "unit_price": 0.72,
+        "total_price": 7.2,
+        "sort_order": 30,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC COUPLING 2'' (BX QT 100)",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "9002299",
+        "unit_price": 0.39,
+        "total_price": 7.8,
+        "sort_order": 31,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 2'' (BX QT 35)",
+        "quantity": 8.0,
+        "units": "EA",
+        "sku": "9002460",
+        "unit_price": 1.54,
+        "total_price": 12.32,
+        "sort_order": 32,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 2'' 1-1/2'' (BX QT 50)",
+        "quantity": 12.0,
+        "units": "EA",
+        "sku": "9002466",
+        "unit_price": 1.36,
+        "total_price": 16.32,
+        "sort_order": 33,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 2'' (BX QT 25)",
+        "quantity": 5.0,
+        "units": "EA",
+        "sku": "9002523",
+        "unit_price": 1.87,
+        "total_price": 9.35,
+        "sort_order": 34,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC WYE 2'' 1-1/2'' (BX QT 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002529",
+        "unit_price": 2.29,
+        "total_price": 9.16,
+        "sort_order": 35,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 90 2'' (BX QT 50)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002396",
+        "unit_price": 1.19,
+        "total_price": 4.76,
+        "sort_order": 36,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC CAP 2 BOX QTY (50 PCS)",
+        "quantity": 10.0,
+        "units": "EA",
+        "sku": "9002357",
+        "unit_price": 1.89,
+        "total_price": 18.9,
+        "sort_order": 37,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC 22 2'' (BX QT 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002432",
+        "unit_price": 0.99,
+        "total_price": 3.96,
+        "sort_order": 38,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC STREET 22 2'' (BX QT 25)",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "9002437",
+        "unit_price": 2.41,
+        "total_price": 9.64,
+        "sort_order": 39,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "J-HOOK (DWV) 2 IN - SIOUX CHIEF (BX QT 50)",
+        "quantity": 12.0,
+        "units": "EA",
+        "sku": "3042350",
+        "unit_price": 0.75,
+        "total_price": 9.0,
+        "sort_order": 40,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 3'' (BX QT 30)",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "9002461",
+        "unit_price": 4.05,
+        "total_price": 4.05,
+        "sort_order": 41,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "IPS - WELD ON PLUMBING PRIMER PUR PT *****FINAL SALE/NO RETURNS/EXCEPTIONS*****",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "1073757",
+        "unit_price": 8.05,
+        "total_price": 8.05,
+        "sort_order": 42,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "IPS - WELD ON PLUMBING 782 CLR QT PVC",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "1073760",
+        "unit_price": 12.85,
+        "total_price": 38.55,
+        "sort_order": 43,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 3'' 1-1/2'' BX QT 20",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "9002467",
+        "unit_price": 2.94,
+        "total_price": 8.82,
+        "sort_order": 44,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PVC TEE 3'' 2 (BX OT 10)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "9002468",
+        "unit_price": 3.04,
+        "total_price": 6.08,
+        "sort_order": 45,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SELF NAILING PLATE 1-1/2 IN X 6 IN; 16 GAUGE (BX QT 100)",
+        "quantity": 200.0,
+        "units": "EA",
+        "sku": "1073569",
+        "unit_price": 0.26,
+        "total_price": 52.0,
+        "sort_order": 46,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "SELF NAILING PLATE 3-1/2 IN X 6 IN; 16 GAUGE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "1073562",
+        "unit_price": 0.91,
+        "total_price": 0.91,
+        "sort_order": 47,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "NAIL PLATE 3 IN X 18 IN; 16 HOLE; 16 GAUGE BOX 25PCS",
+        "quantity": 12.0,
+        "units": "EA",
+        "sku": "1073556",
+        "unit_price": 1.48,
+        "total_price": 17.76,
+        "sort_order": 48,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 300' ROLL X 3/4\" POTABLE WATER - BLUE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857904",
+        "unit_price": 171.24,
+        "total_price": 171.24,
+        "sort_order": 49,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 300' ROLL X 3/4\" POTABLE WATER - RED",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857891",
+        "unit_price": 171.24,
+        "total_price": 171.24,
+        "sort_order": 50,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 300' ROLL X 1/2\" POTABLE WATER - BLUE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857899",
+        "unit_price": 87.59,
+        "total_price": 87.59,
+        "sort_order": 51,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 300' ROLL X 1/2\" POTABLE WATER - RED",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857886",
+        "unit_price": 87.59,
+        "total_price": 87.59,
+        "sort_order": 52,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 20' STRAIGHT X 1/2\" POTABLE WATER - BLUE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857897",
+        "unit_price": 7.12,
+        "total_price": 7.12,
+        "sort_order": 53,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 20' STRAIGHT X 1/2\" POTABLE WATER - RED",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857884",
+        "unit_price": 7.12,
+        "total_price": 7.12,
+        "sort_order": 54,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 SLEEVE WITH STOP BAG QTY - 100",
+        "quantity": 200.0,
+        "units": "EA",
+        "sku": "SP*858176",
+        "unit_price": 0.2,
+        "total_price": 40.0,
+        "sort_order": 55,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 SLEEVE WITH STOP BAG-50 BOX-2000",
+        "quantity": 150.0,
+        "units": "EA",
+        "sku": "SP*858178",
+        "unit_price": 0.38,
+        "total_price": 57.0,
+        "sort_order": 56,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "IPS: FULL NAIL CLAMP 3/4 IN (A) BAG HAS 50)",
+        "quantity": 250.0,
+        "units": "EA",
+        "sku": "3001423",
+        "unit_price": 0.24,
+        "total_price": 60.0,
+        "sort_order": 57,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "IPS: FULL NAIL CLAMP 1/2 IN (A) BAG HAS 100, CASE 1000)",
+        "quantity": 200.0,
+        "units": "EA",
+        "sku": "3001421",
+        "unit_price": 0.19,
+        "total_price": 38.0,
+        "sort_order": 58,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "FLEXCRAFT: 7/8\" ID (3/4\") 3/8\" W 72\" SELF SEAL PE PIPE INSULATION. 46 PIECES PER CARTON.",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "SP*05569506",
+        "unit_price": 1.68,
+        "total_price": 33.6,
+        "sort_order": 59,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "FLEXCRAFT: 5/8\" ID (1/2\") 3/8\" W 72\" SELF SEAL PE PIPE INSULATION. 66 PIECES PER CARTON.",
+        "quantity": 8.0,
+        "units": "EA",
+        "sku": "SP*05569504",
+        "unit_price": 1.64,
+        "total_price": 13.12,
+        "sort_order": 60,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 TEE PLASTIC BAG-10 BOX-150",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "SP*858152",
+        "unit_price": 1.98,
+        "total_price": 39.6,
+        "sort_order": 61,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" x 1/2\" X 3/4\" PEX-A F1960 REDUCING TEE PLASTIC",
+        "quantity": 12.0,
+        "units": "EA",
+        "sku": "SP*858163",
+        "unit_price": 1.89,
+        "total_price": 22.68,
+        "sort_order": 64,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 ELBOW PLASTIC BAG-10 BOX-500",
+        "quantity": 50.0,
+        "units": "EA",
+        "sku": "SP*858125",
+        "unit_price": 1.43,
+        "total_price": 71.5,
+        "sort_order": 65,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 PLUG PLASTIC BAG-25 BOX-400",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "SP*858146",
+        "unit_price": 0.92,
+        "total_price": 18.4,
+        "sort_order": 66,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 TEE PLASTIC BAG-25 BOX-200",
+        "quantity": 25.0,
+        "units": "EA",
+        "sku": "SP*858151",
+        "unit_price": 1.25,
+        "total_price": 31.25,
+        "sort_order": 68,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 ELBOW PLASTIC BAG-25 BOX-250",
+        "quantity": 25.0,
+        "units": "EA",
+        "sku": "SP*858124",
+        "unit_price": 1.14,
+        "total_price": 28.5,
+        "sort_order": 69,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "MICKEY MOUSE PIPE SUSPENSION CLAMP 1/2 IN",
+        "quantity": 20.0,
+        "units": "EA",
+        "sku": "1073609",
+        "unit_price": 0.19,
+        "total_price": 3.8,
+        "sort_order": 71,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "ORANGE - PEX-A 300' ROLL X 3/4\" OXYGEN BARRIER",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*857936",
+        "unit_price": 156.92,
+        "total_price": 156.92,
+        "sort_order": 72,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "PEX-A 20' STRAIGHT X 3/4\" OXYGEN BARRIER - ORANGE",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "SP*857934",
+        "unit_price": 14.11,
+        "total_price": 42.33,
+        "sort_order": 73,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4\" PEX-A F1960 X 3/4\" MIP ADAPTER BRASS NL (BOX 50, CASE 200)",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "SP*858231",
+        "unit_price": 4.85,
+        "total_price": 9.7,
+        "sort_order": 75,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "COPPER PIPE TYPE L 1/2'' X 10 FT",
+        "quantity": 4.0,
+        "units": "EA",
+        "sku": "8001017",
+        "unit_price": 30.44,
+        "total_price": 121.76,
+        "sort_order": 76,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 X 1/2\" FIP DROP EAR ELBOW BRASS NL BAG-25 BOX-150",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "SP*858205",
+        "unit_price": 5.15,
+        "total_price": 30.9,
+        "sort_order": 78,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: BLACK NIPPLE 1/2 4",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "9003095",
+        "unit_price": 1.14,
+        "total_price": 6.84,
+        "sort_order": 79,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "EVERFLOW: BLACK CAP 1/2'' (BX OT 75)",
+        "quantity": 6.0,
+        "units": "EA",
+        "sku": "9002698",
+        "unit_price": 1.08,
+        "total_price": 6.48,
+        "sort_order": 80,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2\" PEX-A F1960 X 1/2\" FEMALE SWEAT ADAPTER BRASS NL (BOX 50, CASE 100)",
+        "quantity": 7.0,
+        "units": "EA",
+        "sku": "SP*858207",
+        "unit_price": 2.64,
+        "total_price": 18.48,
+        "sort_order": 82,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "LSP PRODUCTS: OUTLET BOX, WHITE,CENTER OUTLET, WIRSBO VALVES ASSEM. OUTLET BOX",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "5055948",
+        "unit_price": 26.59,
+        "total_price": 26.59,
+        "sort_order": 83,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "STUDOR SHOWER DRAIN - SQUARE TOP - SS STAMPED CP PVC",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "2689062",
+        "unit_price": 17.17,
+        "total_price": 17.17,
+        "sort_order": 84,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "4\" WALL DRYER VENT PLASTIC LOUVERED WHITE (case 12)",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "SP*02020914",
+        "unit_price": 6.43,
+        "total_price": 6.43,
+        "sort_order": 85,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "Invoice number 317425, invoice date 02/17/2026, terms NET 30, freight terms PREPAID, customer Flex Plumbing. Only line-item related numeric fields used for totals; header/footer meta not modeled in schema. All monetary values taken directly from the OCR text; cents preserved. Where OCR spacing suggested swapped order (EA vs price), reconstruction was done by matching unit_price * quantity = extension and aligning EA as units.\n\nLine numbers 12, 62, 63, 67, 70, 74, 77, 81 do not appear in the OCR text; numbering follows document as given.",
+    "summary": {
+      "total_line_items": 74,
+      "line_items_total": 2432.35,
+      "invoice_total": 2636.06,
+      "tax_amount": 203.71
+    }
+  },
+  "_meta": {
+    "invoice_id": "11_pyramid_22464262",
+    "backend": "paddleocr",
+    "elapsed_seconds": 83.0,
+    "prompt_tokens": 6240,
+    "completion_tokens": 5008,
+    "total_tokens": 11248
+  }
+}

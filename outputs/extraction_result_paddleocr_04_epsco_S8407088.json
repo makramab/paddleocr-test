@@ -1,0 +1,148 @@
+{
+  "document_type": "invoice",
+  "vendor_info": {
+    "vendor_name": "EPSCO CENTRAL",
+    "vendor_address": "550 SAW MILL RIVER ROAD",
+    "vendor_city": "YONKERS",
+    "vendor_state": "NY",
+    "vendor_postal_code": "10701",
+    "vendor_phone": "914-899-6007",
+    "vendor_email": "PORSCHE@CPSNYS.COM",
+    "vendor_address_full": "550 SAW MILL RIVER ROAD, YONKERS, NY 10701",
+    "shipping_address": "873 NY-45 STE. 105 B7",
+    "shipping_city": "SPRING VALLEY",
+    "shipping_state": "NY",
+    "shipping_postal_code": "10977",
+    "shipping_address_full": "873 NY-45 STE. 105 B7, SPRING VALLEY, NY 10977",
+    "field_notes": "Two separate invoices are present in the text (S8407088.002 and S8407232.001). Shipping address is the same on both and assumed to be the shown FLEX PLUMBING ship-to. Only invoice table lines are extracted; header-level fields like invoice numbers and dates are not modeled in the schema."
+  },
+  "table_data": {
+    "line_items": [
+      {
+        "description": "TACO 5003-C3-G 3/ SWT UNION MIXING VALVE WI GAUGE",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "TACO 5003-C3-G",
+        "unit_price": 238.5,
+        "total_price": 238.5,
+        "sort_order": 1,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4 VGA CXC TEE",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "77387 VIEGA PROPRESS",
+        "unit_price": 11.17,
+        "total_price": 22.34,
+        "sort_order": 2,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4 VGA CXC COUP",
+        "quantity": 3.0,
+        "units": "EA",
+        "sku": "78052 VIEGA PROPRESS",
+        "unit_price": 7.04,
+        "total_price": 21.12,
+        "sort_order": 3,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4 VGA CXC ST 90 SHRT RADIUS",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "77052 VIEGA PROPRESS",
+        "unit_price": 1.91,
+        "total_price": 3.82,
+        "sort_order": 4,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2 COPPER SPLIT RING HANGER",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "41CT0050",
+        "unit_price": 2.23,
+        "total_price": 4.46,
+        "sort_order": 5,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1 COPPER SPLIT RING HANGER",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "41CT0100",
+        "unit_price": 3.81,
+        "total_price": 3.81,
+        "sort_order": 6,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/8 X 6FT GALV THREADED ROD",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "2TRZ38166",
+        "unit_price": 3.81,
+        "total_price": 3.81,
+        "sort_order": 7,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/8 GALV ROD TAPPED PLATE",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "41AG0038",
+        "unit_price": 1.69,
+        "total_price": 3.38,
+        "sort_order": 8,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "1/2 GAL HD FURNACE CEMENT 1/2 GAL. FURNACE W/ STOVE CEM",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "35515",
+        "unit_price": 15.26,
+        "total_price": 15.26,
+        "sort_order": 9,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "8 GAL SMOKE CLEANOUT CAP 24GA * NYC APPROVED",
+        "quantity": 1.0,
+        "units": "EA",
+        "sku": "A - 4826871",
+        "unit_price": 15.24,
+        "total_price": 15.24,
+        "sort_order": 10,
+        "purchase_type": "materials"
+      },
+      {
+        "description": "3/4 VGA CXM BRONZE ADAPT",
+        "quantity": 2.0,
+        "units": "EA",
+        "sku": "79230 VIEGA PROPRESS",
+        "unit_price": 8.68,
+        "total_price": 17.36,
+        "sort_order": 11,
+        "purchase_type": "materials"
+      }
+    ],
+    "extraction_notes": "First invoice (S8407088.002): line item extensions sum to 352.64 using parsed unit prices; document subtotal is 352.13, indicating minor OCR or rounding discrepancy. Second invoice (S8407232.001) has a single line totaling 17.36; this matches the stated subtotal. Both invoices share vendor and customer details; schema does not support multiple invoices, so line_items and monetary summary reflect combined data.",
+    "summary": {
+      "total_line_items": 11,
+      "line_items_total": 370.0,
+      "invoice_total": 402.28,
+      "tax_amount": 32.79
+    }
+  },
+  "_meta": {
+    "invoice_id": "04_epsco_S8407088",
+    "backend": "paddleocr",
+    "elapsed_seconds": 17.46,
+    "prompt_tokens": 2794,
+    "completion_tokens": 990,
+    "total_tokens": 3784
+  }
+}
