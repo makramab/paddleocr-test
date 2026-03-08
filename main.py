@@ -9,7 +9,8 @@ from openai import AsyncOpenAI, OpenAI
 
 from models import InvoiceExtractionResult
 
-INVOICE_PATH = "./invoices/PH_10_021826_22478997_2026_02_18_211133.PDF"
+INVOICE_PATH_DEFAULT = "./invoices/PH_10_021826_22478997_2026_02_18_211133.PDF"
+INVOICE_PATH_LONG = "./invoices/inorder/11_PH_10_021826_22464262_2026_02_18_211136.PDF"
 
 SYSTEM_PROMPT = """\
 You are an expert invoice data extractor. You will receive raw text extracted from a PDF invoice \
@@ -94,7 +95,12 @@ BACKENDS = {
 }
 
 
-async def run_single(backend: str, run_id: int | None = None, client: AsyncOpenAI | None = None) -> dict:
+async def run_single(
+    backend: str,
+    invoice_path: str = INVOICE_PATH_DEFAULT,
+    run_id: int | None = None,
+    client: AsyncOpenAI | None = None,
+) -> dict:
     """Run a single extraction pipeline. Returns timing/token metadata."""
     label = f"[run {run_id}] " if run_id is not None else ""
     suffix = f"_run{run_id}" if run_id is not None else ""
@@ -107,7 +113,7 @@ async def run_single(backend: str, run_id: int | None = None, client: AsyncOpenA
     # Step 1: Extract text from PDF with Kreuzberg
     print(f"{label}Step 1: Extracting text from PDF with Kreuzberg (backend={backend})...")
     config = BACKENDS[backend]()
-    result = await extract_file(INVOICE_PATH, config=config)
+    result = await extract_file(invoice_path, config=config)
     text = result.content
 
     t_ocr = time.monotonic() - t_start
@@ -201,19 +207,25 @@ async def main() -> None:
         metavar="N",
         help="Run N extractions in parallel for stress testing (default: 1)",
     )
+    parser.add_argument(
+        "--long",
+        action="store_true",
+        help="Use the long invoice (77 line items) instead of the default sample",
+    )
     args = parser.parse_args()
     backend = args.backend
     parallel = args.parallel
+    invoice_path = INVOICE_PATH_LONG if args.long else INVOICE_PATH_DEFAULT
 
     if parallel <= 1:
-        await run_single(backend)
+        await run_single(backend, invoice_path=invoice_path)
         return
 
     # Stress test mode
     print(f"Stress test: launching {parallel} parallel runs with backend={backend}\n")
     t_wall_start = time.monotonic()
     client = AsyncOpenAI()
-    tasks = [run_single(backend, run_id=i, client=client) for i in range(1, parallel + 1)]
+    tasks = [run_single(backend, invoice_path=invoice_path, run_id=i, client=client) for i in range(1, parallel + 1)]
     results = await asyncio.gather(*tasks)
     t_wall = time.monotonic() - t_wall_start
 
