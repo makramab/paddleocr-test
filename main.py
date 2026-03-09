@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import json
+import sys
 import tempfile
 import time
 from pathlib import Path
@@ -123,12 +124,74 @@ async def extract_with_page_split(invoice_path: str, config: ExtractionConfig, l
     return "\n".join(all_text)
 
 
+async def extract_with_isolated_pages(invoice_path: str, config: ExtractionConfig, label: str) -> str:
+    """Split PDF into single pages and OCR each in a separate subprocess to cap peak memory."""
+    reader = PdfReader(invoice_path)
+    total_pages = len(reader.pages)
+
+    # Determine backend and language from config
+    if config.ocr:
+        backend = config.ocr.backend
+        language = config.ocr.language
+    else:
+        backend = "tesseract"
+        language = "eng"
+
+    print(f"{label}  Splitting PDF into {total_pages} pages for isolated subprocess OCR...")
+
+    script = """\
+import asyncio, sys
+from kreuzberg import ExtractionConfig, OcrConfig, extract_file
+from pathlib import Path
+
+async def do_ocr():
+    config = ExtractionConfig(force_ocr=True, ocr=OcrConfig(backend=sys.argv[1], language=sys.argv[2]))
+    result = await extract_file(sys.argv[3], config=config)
+    Path(sys.argv[4]).write_text(result.content)
+
+asyncio.run(do_ocr())
+"""
+
+    all_text = []
+    for i, page in enumerate(reader.pages):
+        page_num = i + 1
+        writer = PdfWriter()
+        writer.add_page(page)
+
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp_pdf:
+            writer.write(tmp_pdf)
+            tmp_pdf_path = tmp_pdf.name
+
+        with tempfile.NamedTemporaryFile(suffix=".txt", delete=False) as tmp_txt:
+            tmp_txt_path = tmp_txt.name
+
+        try:
+            proc = await asyncio.create_subprocess_exec(
+                sys.executable, "-c", script, backend, language, tmp_pdf_path, tmp_txt_path,
+                stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await proc.communicate()
+            if proc.returncode != 0:
+                raise RuntimeError(
+                    f"Subprocess OCR failed for page {page_num} (rc={proc.returncode}):\n{stderr.decode()}"
+                )
+            page_text = Path(tmp_txt_path).read_text()
+            all_text.append(page_text)
+            print(f"{label}  Page {page_num}/{total_pages}: {len(page_text)} chars (subprocess)")
+        finally:
+            Path(tmp_pdf_path).unlink(missing_ok=True)
+            Path(tmp_txt_path).unlink(missing_ok=True)
+
+    return "\n".join(all_text)
+
+
 async def run_single(
     backend: str,
     invoice_path: str = INVOICE_PATH_DEFAULT,
     run_id: int | None = None,
     client: AsyncOpenAI | None = None,
     page_split: bool = False,
+    isolated_pages: bool = False,
 ) -> dict:
     """Run a single extraction pipeline. Returns timing/token metadata."""
     label = f"[run {run_id}] " if run_id is not None else ""
@@ -143,7 +206,9 @@ async def run_single(
     print(f"{label}Step 1: Extracting text from PDF with Kreuzberg (backend={backend})...")
     config = BACKENDS[backend]()
 
-    if page_split and invoice_path.lower().endswith(".pdf"):
+    if isolated_pages and invoice_path.lower().endswith(".pdf"):
+        text = await extract_with_isolated_pages(invoice_path, config, label)
+    elif page_split and invoice_path.lower().endswith(".pdf"):
         text = await extract_with_page_split(invoice_path, config, label)
     else:
         result = await extract_file(invoice_path, config=config)
@@ -250,21 +315,27 @@ async def main() -> None:
         action="store_true",
         help="Split PDF into single pages and OCR each sequentially to reduce peak memory",
     )
+    parser.add_argument(
+        "--isolated-pages",
+        action="store_true",
+        help="Split PDF into single pages and OCR each in a separate subprocess to cap peak memory",
+    )
     args = parser.parse_args()
     backend = args.backend
     parallel = args.parallel
     page_split = args.page_split
+    isolated_pages = args.isolated_pages
     invoice_path = INVOICE_PATH_LONG if args.long else INVOICE_PATH_DEFAULT
 
     if parallel <= 1:
-        await run_single(backend, invoice_path=invoice_path, page_split=page_split)
+        await run_single(backend, invoice_path=invoice_path, page_split=page_split, isolated_pages=isolated_pages)
         return
 
     # Stress test mode
     print(f"Stress test: launching {parallel} parallel runs with backend={backend}\n")
     t_wall_start = time.monotonic()
     client = AsyncOpenAI()
-    tasks = [run_single(backend, invoice_path=invoice_path, run_id=i, client=client, page_split=page_split) for i in range(1, parallel + 1)]
+    tasks = [run_single(backend, invoice_path=invoice_path, run_id=i, client=client, page_split=page_split, isolated_pages=isolated_pages) for i in range(1, parallel + 1)]
     results = await asyncio.gather(*tasks)
     t_wall = time.monotonic() - t_wall_start
 
